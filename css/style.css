@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+.messageArea {
+    position: absolute;
+    top: 20px;
+    left: 140px;
+    /* top: 0;
+    left: 0; */
+    width: 546px;
+    height: 40px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(83, 175, 19, 0.2);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.board {
+    position: relative;
+    width: 831px;
+    height: 700px;
+    /* width: 1024px;
+    height: 863px; */
+    margin: auto;
+    background: url(../img/board_mini.jpg) no-repeat;
+}
+    
+.board-grid {
+    position: absolute;
+    top: 78px;
+    left: 140px;
+    /* top: 98px;
+    left: 173px; */
+}
+
+.target-td {
+    width: 76px;
+    height: 76px;
+    /* width: 94px;
+    height: 94px; */
+}
+
+.guess-fire {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    background-color: rgb(83, 175, 19);
+}
+
+.guess-fire input {
+    background-color: rgb(152, 207, 113);
+    border-color: rgb(83, 175, 19);
+    font-size: 1em;
+}
+
+.hit {
+    background: url(../img/ship_mini.png) no-repeat center center;
+}
+
+.miss {
+    background: url(../img/miss_mini.png) no-repeat center center;
+}
